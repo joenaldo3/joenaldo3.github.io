@@ -1,3 +1,3 @@
-# My Portfolio
+# Joe Naldo's Portfolio
 
-A showcase of my work from the program.
+A showcase of my work from the Bloc Designer Program.
