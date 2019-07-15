@@ -1,52 +1,521 @@
-header {
-   background: url(../images/hero-background-image.jpg) center / cover;
-   height: 60vh;
-   justify-content: center;
-   text-align: center;
- }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
- h1 {
-    color: hsla(0, 0%, 100%, 0.9);
-    font-weight: bold;
+/*-----Global Styles-----*/
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+b {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-size: 54.93px;
+  font-weight: bold;
+  color: #444444;
+  line-height: auto;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 35.16px;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-size: 22.5px;
+  font-weight: bold;
+  color: #FF4D82;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: "Lora";
+  font-size: 18px;
+  color: #444444;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+ul {
+  font-family: "Lora";
+  font-size: 18px;
+  color: #444444;
+  line-height: 30px;
   }
 
-.slogan {
-    color: hsla(0, 0%, 100%, 0.7);
-    font-weight: lighter;
-    font-size: 1.6rem;
+.full-pink-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: #FF4D82;
+  padding: 1.2rem 2.4rem;
+  border-radius: 4rem;
+  /*margin: 24px 0;*/
+  transition: 0.2s;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+.full-pink-btn:hover {
+  background: #E34373;
+}
+
+/*-----Mobile Navigation-----*/
+.navbar {
+  font-size: 18px;
+
+  padding-bottom: 10px;
+
+  font-family: "roboto";
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+/*-----Desktop Navigation-----*/
+@media screen and (min-width: 768px) {
+
+  .top-container {
+  background-image: linear-gradient(119.02deg, #185A9D 0.32%, #43CEA2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    height: 88px;
+    width: 928px;
+
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+    list-style-type: none;
+
+  }
+
+  .nav-links {
+    margin-left: 40px;
+    font-family: "Roboto";
+  }
+
+  .logo {
+    justify-content: flex-start;
+  }
+
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    color: #E34373;
+    transition: 0.2s;
+  }
+
+  .nav-links:active {
+    color: #E34373;
+  }
+
+/*----- Desktop Index Page -----*/
+  .hero-section {
+    width: 928px;
+    align-self: center;
+  }
+
+  .intro-top h1, .intro-top p, .intro-bottom p {
+    color: white;
+  }
+
+  .intro-top p{
+    margin-bottom: 16px;
+  }
+  .fadeInUp {
+    animation:fadeInUp 1.5s ease backwards;
+  }
+
+  .animation-delay {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInUp {
+  0%{transform:translate(0px, 16px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+  }
+
+  .from-columbia {
+    font-size: 35.16px;
+
+  }
+
+  .slogan {
+    font-size: 22.5px;
+  }
+
+  .intro-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 24px;
+    }
+
+  .see-case-studies{
+      margin-bottom: 0px;
+      font-family: "Roboto";
+    }
+  .fa-chevron-down {
+    color: white;
+    }
+
+  .case-studies-flex {
+    height: 528px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .project-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 928px;
+  }
+
+  .project-description {
+    margin: auto;
+  }
+
+  .project-description h2 {
+    margin-bottom: 0px;
+  }
+
+  .project-description p {
+    /*width: 346px;*/
+  }
+
+  .card-subtitle {
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 22.5px;
+    color: #FF4D82;
+    margin-bottom: 16px;
+
+  }
+
+  .card-image {
+    justify-content: flex-end;
+  }
+
+  .card-image img{
+    width: 464px;
+    height: 278px;
+    border-radius: 10px
+  }
+  .project-description img {
+    width: 464px;
+    height: 278px;
+    border-radius: 0px;
+  }
+
+  /*----- Desktop Footer -----*/
+  footer {
+    background: #F3F3F3;
+    width: 100vw;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  footer p {
+    margin-bottom: 0px;
+  }
+
+  .footer-header{
+    font-family: "roboto";
+    font-size: 22.5px;
+  }
+
+  .footer-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    width: 304px;
+    justify-content: space-evenly;
+  }
+
+  .footer-icon i{
+    color: #444444;
+    font-size: 36px;
+  }
+
+  .footer-text {
+    font-family: "roboto";
+    font-size: 16px;
+  }
+
+
+/* ----- About page ----- */
+
+/*.h2-header {
+  margin-bottom: 24px;
+}*/
+
+.p-margin {
+  /*margin-bottom: 32px;*/
+  width: 576px;
+}
+
+.navbar-wrapper{
+  background-color: #034F7D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 88px;
+  justify-content: space-between;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1120px;
+}
+
+.about-header {
+  margin: 96px 0 48px 0;
+}
+
+
+
+.about-two-columns {
+  display: flex;
+  flex-direction: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center
+
+}
+
+.column-left {
+  justify-content: flex-start;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-caption {
+  align-self: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #5f5f5f;
+  }
+
+/*----- BentoBin Project Page -----*/
+  .top-container-project {
+  background-color: #37CFB1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 560px;
+  }
+
+  .laptop-no-bg {
+    position: absolute;
+    margin-top: 116px;
+  }
+
+  .justify-center-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .project-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 0 48px 0;
+    width: 736px;
+  }
+
+  .project-headline p {
+    text-align: center;
   }
 
   main {
-   max-width: 900px;
- }
-
- .project-description {
-   padding-left: 0;
- }
-
- .project img {
-   width: 100%;
- }
-
- footer.mdl-mini-footer {
-   bottom: 0;
-   padding: 0.5rem;
-   position: fixed;
-   width: 100%;
-   z-index: 1;
- }
-
- footer.mdl-mini-footer > ul {
-   margin: auto;
-   font-size: 2rem;
- }
-
- @media screen and (max-width: 1024px) {
-    header.mdl-layout__header {
-      display: flex;
-    }
+    width: 100vw;
+  }
+  .blue-background-section {
+    background-color: #F9FCFF;
+    padding: 32px 0px;;
   }
 
- body {
-   padding-bottom: 5rem;
- }
+  .overview-flex {
+    display: flex;
+    width: 736px;
+    margin: auto;
+    justify-content: space-between;
+
+  }
+
+  .overview-container {
+    text-align: center;
+    width: 192px;
+  }
+
+  .regular-section{
+    width: 736px;
+    margin: auto;
+    padding: 80px 0;
+  }
+
+  .regular-section img{
+    margin-bottom: 16px;
+  }
+
+  .design-process-container {
+    display: flex;
+    background: #185A9D;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .design-process-header {
+    color: white;
+    font-family: "Roboto";
+    font-size: 54.93px;
+    margin: 0px;
+  }
+
+  .pink-number {
+    color: #FF4D82;
+    font-weight: bold;
+  }
+
+  .image-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images-row {
+    display: flex;
+    width: 1120px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .survey-results {
+    padding: 32px;
+    width: 800px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  .card-flex-box {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .survey-card {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+  }
+
+  .survey-card p {
+    margin: 0px;
+  }
+
+  .percent-large {
+    font-size: 35.16px;
+  }
+
+
+}
