@@ -1,273 +1,260 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Case Study: BentoBin</title>
+    <title>Portfolio | Joe Naldo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 
     <!-- Font Awesome -->
-       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora%7CRoboto&display=swap" rel="stylesheet">
 
   </head>
   <body>
-    <header>
-      <a class="logo navbar_left" href="index.html">
-        <img alt="joe_logo" src="images/joe_logo.png"/>
-      </a>
-      <nav class="navbar_right">
-        <ul>
-          <li><a href="about_joe.html">About</a></li>
-          <li><a href="documents/joenaldo_resume.pdf" target="_blank">Resumé</a></li>
+    <header class="top-container-project">
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+        <a class="logo" href="index.html">
+              <img src="images/logo.svg" alt="Joe Logo"/>
+            </a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a class="nav-links" href="project.html">Work</a>
+          </li>
+          <li>
+            <a class="nav-links" href="about_joe.html">About</a>
+          </li>
+          <li>
+            <a href="joe-design-resume.pdf" class="nav-links">Resumé</a>
+          </li>
         </ul>
       </nav>
+      <div class="laptop-no-bg fadeInUp">
+        <img src="images/laptop-no-bg.svg" alt="Bentobin Screenshot" />
+      </div>
     </header>
-
     <main>
-
-      <section class="bentonbin_hero">
-        <img class="bentobin_image" src="images/bentobin-screenshot.png" alt="BentoBin Case Study"/>
-        <h3>Case Study</h3>
-        <h1>BentoBin</h1>
-        <p>A cloud based storage platform that allows its customers to save and share content, across all of their devices. BentoBin aims to be approachable, organized and safe–everything that cloud users need.</p>
-        <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Prototype</button>
+      <div class="justify-center-wrapper">
+        <div class="project-headline fadeInUp animation-delay">
+          <h1>BentoBin</h1>
+          <p>A cloud based storage platform that allows its customers to save and share content, across all of their devices. BentoBin aims to be approachable, organized and safe–everything that cloud users need.
+          </p>
+          <a href="https://www.figma.com/proto/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=113%3A1484&scaling=min-zoom&redirected=1" class="full-pink-btn">View Prototype</a>
+        </div>
+      </div>
+      <section class="blue-background-section">
+        <div class="overview-flex">
+          <div class="overview-container">
+            <h3>ROLES</h3>
+            <ul class="overview-list">
+              <li>UX Research</li>
+              <li>Visual Design</li>
+              <li>Brand Identity</li>
+            </ul>
+          </div>
+          <div class="overview-container">
+            <h3>DELIVERABLES</h3>
+            <ul class="overview-list">
+              <li>User Surveys</li>
+              <li>Competitive Analysis</li>
+              <li>User Personas</li>
+              <li>User Stories</li>
+              <li>User Flows</li>
+              <li>Wireframes</li>
+              <li>Usability Testing</li>
+              <li>Mockups</li>
+              <li>Prototypes</li>
+            </ul>
+          </div>
+          <div class="overview-container">
+            <h3>TOOLS</h3>
+            <ul class="overview-list">
+              <li>Figma</li>
+              <li>UsabilityHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="regular-section">
+        <img src="images/lightbulb-icon.svg" alt="Lightbulb Icon"/>
+        <h2>The Problem</h2>
+        <p>There are many competitors for productivity applications. Each app provides their own take on creating and saving content, while keeping everything accessible across multiple devices. Despite all these variations, <b>organization is still a huge issue</b>. Large amounts of content with different file types can cause busy dashboards with the <b>inability to effectively sort what is important</b>, especially on different devices/viewports. When saving content on different devices, there can be <b>frustration in where the content is saved and located.</b>
+        </p>
+        <img src="images/check-icon.svg" alt="Check Icon"/>
+        <h2>The Solution</h2>
+        <p>BentoBin allows you to <b>save anything from anywhere, in one place.</b> Organization is effortless with BentoBin’s intuitive dashboard. BentoBin organizes files in “bins” and categorizes files by type (image, note, link).
+        </p>
+      </section>
+      <section class="design-process-container">
+        <p class="design-process-header">The Design Process
+        </p>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">01 </span>User Research</h2>
+        <p>The design process began with user research to get familiar with potential users and better understand what they are looking for in a cloud-storage app. I created a <b>google forms survey</b> and distributed it across social media as well as other forums (slack groups, email). The survey focussed on the following:
+        </p>
+          <ul>
+            <li>How many survey participants use cloud storage?</li>
+            <li>How do they use cloud storage?</li>
+            <li>What features do they find important?</li>
+          </ul>
+        <p></p>
+        <a href="https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694" class="full-pink-btn">View Survey</a>
+      </section>
+      <section class="blue-background-section">
+        <div class="survey-results">
+          <h3>Survey Results
+          </h3>
+          <p>
+            Out of 20 participants:
+          </p>
+          <div class="card-flex-box">
+            <div class="survey-card">
+              <p><span class="percent-large">100%</span>
+              </p>
+              <p>
+                have a moderately messy dashboard
+              </p>
+            </div>
+            <div class="survey-card">
+              <p><span class="percent-large">90%</span>
+              </p>
+              <p>
+                use it for documents, notes, and photo backups
+              </p>
+            </div>
+            <div class="survey-card">
+              <p><span class="percent-large">75%</span>
+              </p>
+              <p>
+                find organization to be moderately difficult
+              </p>
+            </div>
+            <div class="survey-card">
+              <p><span class="percent-large">75%</span>
+              </p>
+              <p>
+                depend on cloud-based tools daily
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">02 </span>Personas</h2>
+        <p>After gathering the results from the survey, I conducted several follow-up interviews with survey participants to dig deeper in their experience with cloud storage apps. From analyzing both the survey results and the interview questions, two main personas who represent the users were identified.
+        </p>
+        <a href="https://www.figma.com/file/XLBN7NzrQgMyhETsIDdj925W/Cloud-Storage-User-Personas?node-id=0%3A1" class="full-pink-btn">View Full Personas</a>
       </section>
 
-      <section class="overview">
-            <div class="roles">
-              <h3>ROLES</h3>
-              <ul class="role-list">
-                <li>UX Research</li>
-                <li>Visual Design</li>
-                <li>Brand Identity</li>
-              </ul>
+      <section class="blue-background-section">
+        <div class="image-contain">
+            <div class="images-row">
+              <img src="images/persona-1.svg" alt="Persona 1: Leslie">
+              <img src="images/persona-2.svg" alt="Persona 2: Rob">
             </div>
-            <div class="deliverables">
-              <h3>DELIVERABLES</h3>
-              <ul class="deliverables-list">
-                <li>User Surveys</li>
-                <li>Competitive Analysis</li>
-                <li>User Personas</li>
-                <li>User Stories</li>
-                <li>User Flows</li>
-                <li>Wireframes</li>
-                <li>Usability Testing</li>
-                <li>Branding & Style Guide</li>
-                <li>High-Fidelity Prototype</li>
-              </ul>
-            </div>
-            <div class="tools">
-              <h3>TOOLS</h3>
-              <ul class="tools-list">
-                <li>Figma</li>
-                <li>Usability Hub</li>
-              </ul>
-            </div>
-        </section>
-        <section class="summary">
-          <h2>The Problem</h2>
-          <p>There are many competitors for productivity applications. Each app provides their own take on creating and saving content, while keeping everything accessible across multiple devices. Despite all these variations, organization is still a huge issue. Large amounts of content with different file types can cause busy dashboards with the inability to effectively sort what is important, especially on different devices/viewports. When saving content on different devices, there can be frustration in where the content is saved and located.</p>
-          <h2>The Solution</h2>
-          <p>BentoBin allows you to save anything from anywhere, in one place. Organization is effortless with BentoBin’s intuitive dashboard. BentoBin organizes files in “bins” and categorizes files by type (image, note, link).</P>
-        </section>
-        <section class="design_process">
-          <div class="blue_section">
-            <div class="section_num">
-            <p>1</p>
-            </div>
-            <h2>User Research</h2>
-            <p>The design processes began with user research to get familiar with potential users and better understand what they are looking for in a cloud-storage app. I created a survey and distributed it across social media as well as other forums (slack groups, email). The survey focussed on the following:</p>
-            <ul>
-              <li>How many survey participants use cloud storage?</li>
-              <li>How do they use cloud storage?</li>
-              <li>What features do they find important?</li>
-            </ul>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Survey</button>
-            <div class="screenshot_columns">
-              <img src="images/survey_screenshot1.png" alt="Screenshot 1"/>
-              <img src="images/survey_screenshot2.png" alt="Screenshot 2"/>
-            </div>
-            <div class="summary_card">
-              <h3>CLOUD STORAGE SURVEY SUMMARY</h3>
-              <ul>
-                <li>Used for work, school, and personal use.</li>
-                <li>Requires lots of storage for file and picture backups.</li>
-                <li>Accessed across multiple devices</li>
-                <li>Collaboration and content creation are also very important features.</li>
-                <li>Organization can get moderately messy.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="white_section">
-            <div class="section_num">
-            <p>2</p>
-            </div>
-            <h2>Personas</h2>
-            <p>After gathering the results from the survey, I conducted several follow-up interviews with survey participants to dig deeper in their experience with cloud storage apps. From analyzing both the survey results and the interview questions, two main personas who represent the users were identified.</p>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Full Personas</button>
-            <div class="persona_card">
-              <img src="images/Profile-leslie.png" alt="Leslie"/>
-              <p class="card_title">Leslie</p>
-              <p class="card_subline">Admin Assistant</p>
-              <h3>MOTIVATIONS</h3>
-              <ul>
-                <li>Looks for inspiration from the web constantly.</li>
-                <li>Shares content a lot with friends.</li>
-              </ul>
-              <h3>FRUSTRATIONS</h3>
-              <ul>
-                <li>Saves duplicate content.</li>
-                <li>Struggles searching through content</li>
-              </ul>
-            </div>
-            <div class="persona_card">
-              <img src="images/Profile-rob.png" alt="Rob"/>
-              <p class="card_title">Rob</p>
-              <p class="card_subline">Student</p>
-              <h3>MOTIVATIONS</h3>
-              <ul>
-                <li>Wants one central place for all his notes.</li>
-                <li>Views notes on both desktop and mobile.</li>
-              </ul>
-              <h3>FRUSTRATIONS</h3>
-              <ul>
-                <li>Forgets where notes have been saved.</li>
-                <li>Can't access his saved desktop files via mobile.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="blue_section">
-            <div class="section_num">
-            <p>3</p>
-            </div>
-            <h2>Competitive Analysis</h2>
-            <p>The research process continued by identifying three cloud-storage competitors, and putting them through a SWOT analysis evaluating their strengths, weaknesses, opportunities, and threats. Google Drive, Pinterest, and Dropbox are the top cloud-storage apps that the survey participants used.</p>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Full Personas</button>
-            <div class="cloud_logos">
-              <img src="images/Google_Drive_Logo.svg" alt="Google Drive"/>
-              <img src="images/Pinterest_logo.svg" alt="Pinterest"/>
-              <img src="images/Dropbox_logo.svg" alt="Dropbox"/>
-            </div>
+        </div>
+      </section>
 
-            <div class="summary_card">
-              <h3>SWOT SUMMARY</h3>
-              <ul>
-                <li>Dropbox and Google Drive provide great inspiration for BentoBin’s information architecture design. The file structure and sorting labels are minimal and very intuitive, which survey participants prefer.</li>
-                <li>Pinterest, on the other hand, provides a nice graphical grid-view in the their dashboard but can be difficult to navigate and sort through the saved items.</li>
-              </ul>
+      <section class="regular-section">
+        <h2><span class="pink-number">03 </span>Competitive Analysis</h2>
+        <p>I continued the research process by identifying three cloud-storage competitors, and putting them through a SWOT analysis to evaluate their strengths, weaknesses, opportunities, and threats. Google Drive, Pinterest, and Dropbox are the top cloud-storage apps that the survey participants used.
+        </p>
+        <a href="https://docs.google.com/document/d/1nWQlNp6fF7anPh-Wnp8bOE2q5MKbPix_A4FfcIL8PXg/edit?usp=sharing" class="full-pink-btn">View SWOT Analysis</a>
+      </section>
+      <section class="blue-background-section">
+        <div class="image-contain">
+            <div class="images-row">
+              <img src="images/ca-google-drive.svg" alt="Google Drive Comp. Analysis">
+              <img src="images/ca-pinterest.svg" alt="Pinterest Comp. Analysis">
+              <img src="images/ca-dropbox.svg" alt="Dropbox Comp. Analysis">
             </div>
-          </div>
-          <div class="white_section">
-            <div class="section_num">
-            <p>4</p>
-            </div>
-            <h2>User Stories</h2>
-            <p>I created a backlog of user stories for all the functionality needed to address the users’ problems. There was difficulty distinguishing which functions were necessary or just a “nice-to-have.” After prioritizing the user stories from highest to lowest, the highest-ranking user stories were put into the first design sprint to make up the first Minimum Viable Product (MVP).</p>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View User Stories</button>
-            <img src="images/user_story_screenshot.png" alt="User Story Screenshot"/>
-          </div>
-          <div class="blue_section">
-            <div class="section_num">
-            <p>5</p>
-            </div>
-            <h2>User Flows</h2>
-            <p>The following user stories were made into user flows:</p>
-            <ul>
-              <li>Upload a new file.</li>
-              <li>Creating a new folder.</li>
-              <li>Move an item into a new folder.</li>
-            </ul>
-            <img src="images/BentoBoard_User_Flows.png" alt="User Flows"/>
-          </div>
-          <div class="white_section">
-            <div class="section_num">
-              <p>6</p>
-            </div>
-            <h2>Wireframes</h2>
-            <p>Next, I moved on to the skeletal structure of the product. I sketched several iterations of each screen on paper, then used those sketches to make low-fidelity mockups using Figma.</p>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Sketches</button>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Wireframes</button>
-            <div class="screenshot_columns">
-              <img src="images/wireframe_1.png" alt="Wireframe Skteches"/>
-              <img src="images/BentoBin_Dashboard_wireframe.png" alt="Wireframe Lo-Fi"/>
-            </div>
-          </div>
-          <div class="blue_section">
-            <div class="section_num">
-            <p>7</p>
-            </div>
-            <h2>Usability Testing</h2>
-            <p>I used the wireframes for my first round of user testing. The test results showed the following:</p>
-            <ul>
-              <li>Adding “tags” to an item when there actually is no user story for this. This was removed to avoid scope creep.</li>
-              <li>To move an item to a new location, the participants had to click through multiple links to accomplish the task.</li>
-              <li>One of the participants suggested to use color and/or icons to distinguish the file types</li>
-            </ul>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Test Results</button>
-          </div>
-          <div class="white_section">
-            <div class="section_num">
-              <p>8</p>
-            </div>
-            <h2>Branding</h2>
-            <p>I used mind-mapping to figure out a name for the product. I jotted down 2 words that describe the cloud-service, storage and organization, then wrote several words that related to those attributes. Throughout the research process, I heard buzzwords such as minimal, approachable, intuitive, and dependable. After several iterations, I narrowed the name down to BentoBin.</p>
-            <p>I was inspired by bento boxes, the modern japanese lunchbox. Bento boxes have separate compartments that hold different parts of your lunch. The name evokes a casual, fun and “kawaii” feeling towards the brand.</p>
-            <button onClick="window.open('https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694');">View Test Results</button>
-            <img src="images/BentoBin_Logo_Sketches.png" alt="Logo Skteches"/>
-            <img src="images/hi-fi_logo.png" alt="Logo Variations"/>
-            <img src="images/hi-fi_color.png" alt="Brand Colors"/>
-          </div>
-          <div class="blue_section">
-            <div class="section_num">
-              <p>9</p>
-            </div>
-            <h2>Mockups</h2>
-            <p>I applied all the branding (colors, typography, imagery) to the wireframes to create BentoBin’s initial high-fidelity mockups. I put my mockups up for testing at UsabilityHub.I created two variations of three different elements and conducted three preference tests on all three. Out of 6 participants, 2 preference tests had unanimous winners while 1 preference test was split 50/50. Participants left great feedback after testing and provided great insight such as “the 1st mockup was cleaner and required less cognitive load.”</p>
-            <div class="mockup_section">
-              <div class="mockup_screenshot">
-                <h3>SIGN-IN PAGE: OPTION 1</h3>
-                <img src="images/Sign-IN_Page(Option1).png" alt="Sign-in Option 1"/>
-              </div>
-              <div class="mockup_screenshot">
-                <h3>SIGN-IN PAGE: OPTION 2</h3>
-                <img src="images/Sign-IN_Page(Option2).png" alt="Sign-in Option 2"/>
-              </div>
-              <div class="mockup_screenshot">
-                <h3>DASHBOARD: OPTION 1</h3>
-                <img src="images/BentoBin-Dashboard(Option_2).png" alt="Dashboard Option 1"/>
-              </div>
-              <div class="mockup_screenshot">
-                <h3>DASHBOARD: OPTION 2</h3>
-                <img src="images/BentoBin-Dashboard(Option_3).png" alt="Dashboard Option 2"/>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="conclusion">
-          <h2>Conclusion</h2>
-          <h3>WHAT DID I LEARN?</h3>
-          <p>The project started with vague business requirements that had me frustrated in what direction to take. The cloud-storage marketplace is somewhat over saturated with apps that have great designs with a lot of functionality. But despite the over saturation, cloud-storage users still need better solutions to solve cloud-storage problems such as making organization better, or allowing the user to add content faster. I would have never found these problems if it weren't for user research and multiple user testing. Based off of these problems, I focused on improving content organization and minimizing dashboard clutter.
-          </p>
-          <p>If given more time, I would continue designing important functions such as search and sharing capabilities. I would expand the use of this app from “casual users” to “professional users” who use cloud-storage for corporate needs. This would require more user research and testing by corporate users, as well as upper management.
-          </p>
-          <p>All-in-all, I learned that applying the research-driven design process to the problem will achieve an effective solution.
-          </p>
-        </section>
+        </div>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">04 </span>User Stories</h2>
+        <p>I created a backlog of user stories for all the functionality needed to address the users’ problems. There was difficulty distinguishing which functions were necessary or just a “nice-to-have.” After prioritizing the user stories from highest to lowest, the highest-ranking user stories were put into the first design sprint to make up the first Minimum Viable Product (MVP).</p>
+        <a href="https://docs.google.com/spreadsheets/d/1y3sLX8UfZhZMW8fqmODVqIk06kglVEMZ7WBxdKfmppw/edit?usp=sharing" class="full-pink-btn">View User Stories</a>
+      </section>
+      <section class="blue-background-section">
+        <div class="image-contain">
+            <img src="images/user_story_screenshot.png" alt="User Story Screenshot">
+            <p>User Story MVP snippet.
+            </p>
+        </div>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">05 </span>User Flows</h2>
+        <p>The following user stories were made into user flows:</p>
+          <ul>
+            <li>Upload a new file.</li>
+            <li>Creating a new folder.</li>
+            <li>Move an item into a new folder.</li>
+          </ul>
+        <p></p>
+      <a href="https://drive.google.com/drive/folders/1Tunup7wX5lLBEDUBEBmc4B1z3NiaeKpZ?usp=sharing" class="full-pink-btn">View All User Flows</a>
+      </section>
+      <section class="blue-background-section">
+        <div class="image-contain">
+            <img src="images/bentoboard_user_flows.png" alt="User Flow Example: Create an account">
+            <p>User Flow Example: Create an account.
+            </p>
+        </div>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">06 </span>Wireframes</h2>
+        <p>Next, I moved on to the skeletal structure of the product. I sketched several iterations of each screen on paper, then used those sketches to make low-fidelity mockups using Figma.
+        </p>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">07 </span>Branding</h2>
+        <p>I used mind-mapping to figure out a name for the product. I jotted down 2 words that describe the cloud-service, storage and organization, then wrote several words that related to those attributes. Throughout the research process, I heard buzzwords such as minimal, approachable, intuitive, and dependable. After several iterations, I narrowed the name down to BentoBin.
+        </p>
+        <p>I was inspired by bento boxes, the modern japanese lunchbox. Bento boxes have separate compartments that hold different parts of your lunch. The name evokes a casual, fun and “kawaii” feeling towards the brand.
+        </p>
+        <a href="https://www.figma.com/file/ZcIx1WLpBJyBA5q2hqUosZ3c/BentoBin-Styleguide?node-id=0%3A1" class="full-pink-btn">View Style Guide</a>
+      </section>
+      <section class="regular-section">
+        <h2><span class="pink-number">08 </span>Mockups and User Testing</h2>
+        <p>I applied all the branding (colors, typography, imagery) to the wireframes to create BentoBin’s initial high-fidelity mockups. I put my mockups up for testing at UsabilityHub.I created two variations of three different elements and conducted three preference tests on all three. Out of 6 participants, 2 preference tests had unanimous winners while 1 preference test was split 50/50. Participants left great feedback after testing and provided great insight such as “the 1st mockup was cleaner and required less cognitive load.”
+        </p>
+      </section>
+      <section class="design-process-container">
+        <p class="design-process-header">Conclusion
+        </p>
+      </section>
+      <section class="regular-section">
+        <h2>What did I learn?</h2>
+        <p>The project started with vague business requirements that had me frustrated in what direction to take. The cloud-storage marketplace is somewhat over saturated with apps that have great designs with a lot of functionality. But despite the over saturation, cloud-storage users still need better solutions to solve cloud-storage problems such as making organization better, or allowing the user to add content faster. I would have never found these problems if it weren't for user research and multiple user testing. Based off of these problems, I focused on improving content organization and minimizing dashboard clutter.
+        </p>
+        <p>If given more time, I would continue designing important functions such as search and sharing capabilities. I would expand the use of this app from “casual users” to “professional users” who use cloud-storage for corporate needs. This would require more user research and testing by corporate users, as well as upper management.
+        </p>
+        <p>All-in-all, I learned that applying the research-driven design process to the problem will achieve an effective solution.
+        </p>
+      </section>
     </main>
     <footer>
-      <h2>Let's be in touch.</h2>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/josephnaldo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/joenaldo3"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/professionaldo/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="mailto:Joseph.Naldo@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-      <p><small>Designed and developed by Joseph Naldo | © Copyright 2019</small></p>
-    </footer>
+        <p class="footer-header">Let's create something amazing together.</p>
+        <ul class="footer-links">
+          <li class="footer-icon">
+            <a href="https://www.linkedin.com/in/josephnaldo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-icon">
+            <a href="https://github.com/joenaldo3"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-icon">
+            <a href="https://www.instagram.com/professionaldo/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li class="footer-icon">
+            <a href="mailto:Joseph.Naldo@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <p class="footer-text">Designed and developed by Joseph Naldo | &copy; Copyright 2019</p>
+      </footer>
   </body>
+</html>
