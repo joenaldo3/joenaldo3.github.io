@@ -75,8 +75,15 @@ ul {
   background: #E34373;
 }
 
+@media screen and (max-width: 575px) {
+  .full-pink-btn {
+    width: 346px;
+    text-align: center;
+  }
+}
+
 /*-----Mobile Navigation-----*/
-.navbar {
+/*.navbar {
   font-size: 18px;
 
   padding-bottom: 10px;
@@ -116,9 +123,11 @@ ul {
 .active {
   display: block;
 }
+*/
+
 
 /*-----Desktop Navigation-----*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
 
   .top-container {
   background-image: linear-gradient(119.02deg, #185A9D 0.32%, #43CEA2 100%);
@@ -137,6 +146,10 @@ ul {
     padding-bottom: 0;
     height: 88px;
     width: 928px;
+    font-size: 18px;
+
+
+    font-family: "roboto";
 
   }
 
@@ -144,6 +157,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    list-style-type: none;
   }
 
   .main-nav li {
@@ -155,11 +169,15 @@ ul {
   .nav-links {
     margin-left: 40px;
     font-family: "Roboto";
+    text-decoration: none;
+    color: white;
   }
 
   .logo {
     justify-content: flex-start;
   }
+
+
 
 
   .navbar-toggle {
@@ -522,5 +540,63 @@ ul {
     font-size: 35.16px;
   }
 
+  .images-row-wireframes {
+    display: flex;
+    width: 730px;
+    justify-content: space-evenly;
+    align-items: center;
+    }
 
+  .images-row-wireframes img {
+    width: 352px;
+    height: 220px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  .image-contain p {
+    margin: 16px 0 0 0;
+  }
+
+  .center-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pref-test {
+    display: flex;
+    width: 1110px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .pref-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 540px;
+  }
+
+  .underline-bold {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .center-section-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-card {
+    display: flex;
+    flex-direction: column;
+    /*width: 235px;*/
+    justify-content: center;
+    align-text: center;
+  }
 }
