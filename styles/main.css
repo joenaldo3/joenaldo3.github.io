@@ -619,6 +619,10 @@ main {
   width: 100%;
 }
 
+.self-center {
+  justify-content: center;
+}
+
 .wireframe-sketch img {
   max-width: 540px;
   width: 100%;
