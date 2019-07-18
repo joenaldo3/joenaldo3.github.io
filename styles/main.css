@@ -122,6 +122,12 @@ nav {
     animation:fadeInUp 1.5s ease backwards;
   }
 
+@media screen and (max-width: 991px){
+  .fadeInUp {
+      animation: 0;
+    }
+}
+
   .animation-delay {
     animation-delay: 0.5s;
   }
