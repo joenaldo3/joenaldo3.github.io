@@ -14,12 +14,13 @@
 
   </head>
   <body>
-    <header class="top-container-project">
-      <nav class="navbar">
+  <div class="top-container-project">
+    <nav>
+      <!-- Navbar SVG logo -->
         <a class="logo" href="index.html">
-              <img src="images/logo.svg" alt="Joe Logo"/>
-            </a>
-        <ul class="main-nav" id="js-menu">
+        <img src="https://raw.githubusercontent.com/joenaldo3/joenaldo3.github.io/master/images/joe_logo.png" alt="Joe Logo"/>
+        </a>
+        <ul class="main-nav">
           <li>
             <a class="nav-links" href="project.html">Work</a>
           </li>
@@ -31,58 +32,62 @@
           </li>
         </ul>
       </nav>
-      <div class="laptop-no-bg fadeInUp">
-        <img src="images/laptop-no-bg.svg" alt="Bentobin Screenshot" />
+    <div class="laptop-no-bg fadeInUp">
+        <img src="https://joenaldo3.github.io/images/laptop-no-bg.svg" alt="Bentobin Screenshot" />
       </div>
-    </header>
+  </div>
     <main>
       <div class="justify-center-wrapper">
         <div class="project-headline fadeInUp animation-delay">
           <h1>BentoBin</h1>
           <p>A cloud based storage platform that allows its customers to save and share content, across all of their devices. BentoBin aims to be approachable, organized and safe–everything that cloud users need.
           </p>
-          <a href="https://www.figma.com/proto/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=113%3A1484&scaling=min-zoom&redirected=1" class="full-pink-btn">View Prototype</a>
+          <div class="button-center">
+            <a href="https://www.figma.com/proto/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=113%3A1484&scaling=min-zoom&redirected=1" class="full-pink-btn">View Prototype</a>
+          </div>
         </div>
       </div>
       <section class="blue-background-section">
+
         <div class="overview-flex">
-          <div class="overview-container">
-            <h3>ROLES</h3>
-            <ul class="overview-list">
-              <li>UX Research</li>
-              <li>Visual Design</li>
-              <li>Brand Identity</li>
-            </ul>
+            <div class="overview-container">
+              <h3>ROLES</h3>
+              <ul class="overview-list">
+                <li>UX Research</li>
+                <li>Visual Design</li>
+                <li>Brand Identity</li>
+              </ul>
+            </div>
+            <div class="overview-container">
+              <h3>DELIVERABLES</h3>
+              <ul class="overview-list">
+                <li>User Surveys</li>
+                <li>Competitive Analysis</li>
+                <li>User Personas</li>
+                <li>User Stories</li>
+                <li>User Flows</li>
+                <li>Wireframes</li>
+                <li>Usability Testing</li>
+                <li>Mockups</li>
+                <li>Prototypes</li>
+              </ul>
+            </div>
+            <div class="overview-container">
+              <h3>TOOLS</h3>
+              <ul class="overview-list">
+                <li>Figma</li>
+                <li>UsabilityHub</li>
+              </ul>
+            </div>
           </div>
-          <div class="overview-container">
-            <h3>DELIVERABLES</h3>
-            <ul class="overview-list">
-              <li>User Surveys</li>
-              <li>Competitive Analysis</li>
-              <li>User Personas</li>
-              <li>User Stories</li>
-              <li>User Flows</li>
-              <li>Wireframes</li>
-              <li>Usability Testing</li>
-              <li>Mockups</li>
-              <li>Prototypes</li>
-            </ul>
-          </div>
-          <div class="overview-container">
-            <h3>TOOLS</h3>
-            <ul class="overview-list">
-              <li>Figma</li>
-              <li>UsabilityHub</li>
-            </ul>
-          </div>
-        </div>
+
       </section>
       <section class="regular-section">
-        <img src="images/lightbulb-icon.svg" alt="Lightbulb Icon"/>
+        <img src="https://joenaldo3.github.io/images/lightbulb-icon.svg" alt="Lightbulb Icon"/>
         <h2>The Problem</h2>
         <p>There are many competitors for productivity applications. Each app provides their own take on creating and saving content, while keeping everything accessible across multiple devices. Despite all these variations, <b>organization is still a huge issue</b>. Large amounts of content with different file types can cause busy dashboards with the <b>inability to effectively sort what is important</b>, especially on different devices/viewports. When saving content on different devices, there can be <b>frustration in where the content is saved and located.</b>
         </p>
-        <img src="images/check-icon.svg" alt="Check Icon"/>
+        <img src="https://joenaldo3.github.io/images/check-icon.svg" alt="Check Icon"/>
         <h2>The Solution</h2>
         <p>BentoBin allows you to <b>save anything from anywhere, in one place.</b> Organization is effortless with BentoBin’s intuitive dashboard. BentoBin organizes files in “bins” and categorizes files by type (image, note, link).
         </p>
@@ -91,6 +96,7 @@
         <p class="design-process-header">The Design Process
         </p>
       </section>
+
       <section class="regular-section">
         <h2><span class="pink-number">01 </span>User Research</h2>
         <p>The design process began with user research to get familiar with potential users and better understand what they are looking for in a cloud-storage app. I created a <b>google forms survey</b> and distributed it across social media as well as other forums (slack groups, email). The survey focussed on the following:
@@ -103,6 +109,7 @@
         <p></p>
         <a href="https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694" class="full-pink-btn">View Survey</a>
       </section>
+
       <section class="blue-background-section">
         <div class="survey-results">
           <h3>Survey Results
@@ -178,9 +185,12 @@
         <p>I created a backlog of user stories for all the functionality needed to address the users’ problems. There was difficulty distinguishing which functions were necessary or just a “nice-to-have.” After prioritizing the user stories from highest to lowest, the highest-ranking user stories were put into the first design sprint to make up the first Minimum Viable Product (MVP).</p>
         <a href="https://docs.google.com/spreadsheets/d/1y3sLX8UfZhZMW8fqmODVqIk06kglVEMZ7WBxdKfmppw/edit?usp=sharing" class="full-pink-btn">View User Stories</a>
       </section>
+
       <section class="blue-background-section">
         <div class="image-contain">
-            <img src="images/user_story_screenshot.png" alt="User Story Screenshot">
+          <div class="images-row">
+              <img src="images/user_story_screenshot.png" alt="User Story Screenshot">
+          </div>
             <p>User Story MVP snippet.
             </p>
         </div>
@@ -198,7 +208,9 @@
       </section>
       <section class="blue-background-section">
         <div class="image-contain">
+          <div class="images-row">
             <img src="images/bentoboard_user_flows.png" alt="User Flow Example: Create an account">
+          </div>
             <p>User Flow Example: Create an account.
             </p>
         </div>
@@ -211,7 +223,7 @@
 
       <section class="blue-background-section">
         <div class="image-contain">
-            <div class="images-row-wireframes">
+            <div class="images-row wireframe-sketch">
               <img src="images/wireframe_sketches.png" alt="Wireframe sketches">
               <img src="images/dashboard_wireframe.png" alt="Dashboard Wireframe">
             </div>
@@ -229,7 +241,9 @@
       </section>
       <section class="blue-background-section">
         <div class="image-contain">
+          <div class="images-row">
           <img src="images/bento-logo-sketches.png" alt="Logo Sketches">
+        </div>
           <p>BentoBin Logo Sketches.
           </p>
         </div>
@@ -240,24 +254,27 @@
         </p>
         <p>I conducted a preference test with 12 participants to see which logo stood out the most:
         </p>
-        <div class="center-section-column">
-          <div class="logo-card">
-            <p><span class="underline-bold">Logo 1</span>:<br>0% voted for this option.
-            </p>
-            <img src="images/bento-logo-1.svg" alt="Logo iteration 1">
-          </div>
-          <div class="logo-card">
-            <p><span class="underline-bold">Logo 2:</span><br>20% voted for this option.
-            </p>
-            <img src="images/bento-logo-2.svg" alt="Logo iteration 2">
-          </div>
-          <div class="logo-card">
-          <p><span class="underline-bold">Logo 3 (Winner)</span>:<br>80% voted for this option.
-          </p>
-          <img src="images/bento-logo-3.svg" alt="Logo iteration 3">
-          </div>
-        </div>
         </section>
+        <section class="blue-background-section">
+          <div class="images-row">
+            <div class="logo-card">
+              <p><span class="underline-bold">Logo 1</span>:<br>0% voted for this option.
+              </p>
+              <img src="images/bento-logo-1.svg" alt="Logo iteration 1">
+            </div>
+            <div class="logo-card">
+              <p><span class="underline-bold">Logo 2:</span><br>20% voted for this option.
+              </p>
+              <img src="images/bento-logo-2.svg" alt="Logo iteration 2">
+            </div>
+            <div class="logo-card">
+            <p><span class="underline-bold">Logo 3 (Winner)</span>:<br>80% voted for this option.
+            </p>
+            <img src="images/bento-logo-3.svg" alt="Logo iteration 3">
+            </div>
+          </div>
+        </section>
+
         <section class="regular-section">
           <h2><span class="pink-number">08 </span>Mockups and User Testing</h2>
           <p>I applied all the branding (colors, typography, imagery) to the wireframes to create BentoBin’s initial high-fidelity mockups. I put my mockups up for testing at UsabilityHub.I created two variations of three different elements and conducted three preference tests on all three.
@@ -266,23 +283,35 @@
           </p>
       </section>
       <section class="blue-background-section">
-        <div class="center-section">
+        <!--<div class="center-section">-->
           <div class="pref-test">
             <div class="pref-column">
               <p><span class="underline-bold">Sign-in page, option 1:</span> 50% voted for this option</p>
-              <p>Field lables are above the text field and there is no Google logo.</p>
+              <p>Field lables are above the text field and no Google logo.</p>
               <img src="images/sign-in-page-1.png" alt="Sign-in Option 1">
             </div>
             <div class="pref-column">
-              <p><span class="underline-bold">Sign-in page, option 2:</span> 50% voted for this option</p>
+              <p><span class="underline-bold"><b>(Winner)</b> Sign-in page, option 2:</span> 50% voted for this option</p>
               <p>Field lables are inactive text within the text field.
               </p>
               <img src="images/sign-in-page-2.png" alt="Sign-in Option 2">
             </div>
+            <div class="pref-column">
+              <p><span class="underline-bold">Dashboard, option 1:</span> 33% voted for this option</p>
+              <p>Folders show first 4 items within, and is organized within items section.
+              </p>
+              <img src="images/dashboard-1.png" alt="Dashboard Option 1">
+            </div>
+            <div class="pref-column">
+              <p><span class="underline-bold"><b>(Winner)</b> Dashboard, option 2:</span> 67% voted for this option</p>
+              <p>Participants say “it's' well designed, not too busy, and can see both folders and individual files at the same time.”
+              </p>
+              <img src="images/dashboard-2.png" alt="Dashboard Option 2">
+            </div>
           </div>
-        </div>
+        <!--</div>-->
       </section>
-      <section class="blue-background-section">
+      <!--<section class="blue-background-section">
         <div class="center-section">
           <div class="pref-test">
             <div class="pref-column">
@@ -299,7 +328,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="design-process-container">
           <p class="design-process-header">Conclusion
           </p>
@@ -315,8 +344,8 @@
       </section>
     </main>
     <footer>
+    <div class="footer-wrapper">
         <p class="footer-header">Let's create something amazing together.</p>
-
         <ul class="footer-links">
           <li class="footer-icon">
             <a href="https://www.linkedin.com/in/josephnaldo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -332,6 +361,6 @@
           </li>
         </ul>
         <p class="footer-text">Designed and developed by Joseph Naldo | &copy; Copyright 2019</p>
-      </footer>
+    </div>
+   </footer>
   </body>
-</html>
