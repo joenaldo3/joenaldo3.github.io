@@ -20,7 +20,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lora%7CRoboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700%7CRoboto&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -38,12 +38,12 @@
             <a class="nav-links" href="about_joe.html">About</a>
           </li>
           <li>
-            <a href="joe-design-resume.pdf" class="nav-links">Resumé</a>
+            <a href="joe-design-resume.pdf" target="_blank" class="nav-links">Resumé</a>
           </li>
         </ul>
       </nav>
     <div class="laptop-no-bg">
-        <img src="images/laptop-no-bg.svg" alt="Bentobin Screenshot" />
+        <img src="images/laptop-no-bg.png" alt="Bentobin Screenshot" />
       </div>
   </div>
     <main>
@@ -52,8 +52,9 @@
           <h1>BentoBin</h1>
           <p>A cloud based storage platform that allows its customers to save and share content, across all of their devices. BentoBin aims to be approachable, organized and safe–everything that cloud users need.
           </p>
-          <div class="button-center">
-            <a href="https://www.figma.com/proto/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=113%3A1484&scaling=min-zoom&redirected=1" class="full-pink-btn">View Prototype</a>
+          <div class="button-flex">
+            <a href="https://www.figma.com/proto/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=113%3A1484&scaling=min-zoom&redirected=1" target="_blank" class="full-pink-btn">View Desktop Prototype</a>
+            <a href="https://www.figma.com/proto/LIsipTndZ9QnCtyGcOY5lRmz/BentoBin-Clickable-Prototype-Round-2?node-id=2%3A98&viewport=683%2C319%2C0.5383713841438293&scaling=min-zoom" target="_blank" class="full-pink-btn">View Mobile Prototype</a>
           </div>
         </div>
       </div>
@@ -66,6 +67,8 @@
                 <li>UX Research</li>
                 <li>Visual Design</li>
                 <li>Brand Identity</li>
+                <li>Interaction Design</li>
+                <li>Information Architect</li>
               </ul>
             </div>
             <div class="overview-container">
@@ -86,7 +89,11 @@
               <h3>TOOLS</h3>
               <ul class="overview-list">
                 <li>Figma</li>
+                <li>InVision</li>
+                <li>Maze</li>
                 <li>UsabilityHub</li>
+                <li>Google Suite</li>
+
               </ul>
             </div>
           </div>
@@ -117,7 +124,7 @@
             <li>What features do they find important?</li>
           </ul>
         <p></p>
-        <a href="https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694" class="full-pink-btn">View Survey</a>
+        <a href="https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694" target="_blank" class="full-pink-btn">View Survey</a>
       </section>
 
       <section class="blue-background-section">
@@ -163,47 +170,231 @@
         <h2><span class="pink-number">02 </span>Personas</h2>
         <p>After gathering the results from the survey, I conducted several follow-up interviews with survey participants to dig deeper in their experience with cloud storage apps. From analyzing both the survey results and the interview questions, two main personas who represent the users were identified.
         </p>
-        <a href="https://www.figma.com/file/XLBN7NzrQgMyhETsIDdj925W/Cloud-Storage-User-Personas?node-id=0%3A1" class="full-pink-btn">View Full Personas</a>
+        <a href="https://www.figma.com/file/XLBN7NzrQgMyhETsIDdj925W/Cloud-Storage-User-Personas?node-id=0%3A1" target="_blank" class="full-pink-btn">View Full Personas</a>
       </section>
 
+
       <section class="blue-background-section">
-        <div class="image-contain">
-            <div class="images-row">
-              <img src="images/persona-1.svg" alt="Persona 1: Leslie">
-              <img src="images/persona-2.svg" alt="Persona 2: Rob">
+        <div class="persona-contain">
+            <div class="persona-card">
+
+              <img src="images/persona-leslie.png" alt="Persona: Leslie">
+              <h3>Leslie</h3>
+              <p>24/Female<br>Admin Assistant</p>
+
+              <h4>GOAL</h4>
+              <ul>
+                <li>Clear organization for her saved online content (images, articles, etc).
+                </li>
+              </ul>
+
+              <h4>MOTIVATIONS</h4>
+              <ul>
+                <li>Looks for inspiration from the web constantly.
+                </li>
+                <li>Shares content a lot with friends.
+                </li>
+              </ul>
+              <h4>FRUSTRATIONS</h4>
+              <ul>
+                <li>Saves duplicate content.
+                </li>
+                <li>Struggles searching through content.
+                </li>
+              </ul>
             </div>
+            <div class="persona-card">
+
+              <img src="images/persona-rob.png" alt="Persona: Rob">
+              <h3>Rob</h3>
+              <p>19/Male<br>Student</p>
+
+              <h4>GOAL</h4>
+              <ul>
+                <li>Maintain a central repository for his notes.
+                </li>
+              </ul>
+
+              <h4>MOTIVATIONS</h4>
+              <ul>
+                <li>He wants something simple and reliable.
+                </li>
+                <li>Views notes on both desktop and mobile.
+                </li>
+              </ul>
+              <h4>FRUSTRATIONS</h4>
+              <ul>
+                <li>Forgets where notes have been saved.
+                </li>
+                <li>Can't access his saved desktop files view mobile.
+                </li>
+              </ul>
+            </div>
+
         </div>
       </section>
+
 
       <section class="regular-section">
         <h2><span class="pink-number">03 </span>Competitive Analysis</h2>
         <p>I continued the research process by identifying three cloud-storage competitors, and putting them through a SWOT analysis to evaluate their strengths, weaknesses, opportunities, and threats. Google Drive, Pinterest, and Dropbox are the top cloud-storage apps that the survey participants used.
         </p>
-        <a href="https://docs.google.com/document/d/1nWQlNp6fF7anPh-Wnp8bOE2q5MKbPix_A4FfcIL8PXg/edit?usp=sharing" class="full-pink-btn">View SWOT Analysis</a>
+        <a href="https://docs.google.com/document/d/1nWQlNp6fF7anPh-Wnp8bOE2q5MKbPix_A4FfcIL8PXg/edit?usp=sharing" target="_blank" class="full-pink-btn">View SWOT Analysis</a>
       </section>
+
+
       <section class="blue-background-section">
-        <div class="image-contain">
-            <div class="images-row">
-              <img src="images/ca-google-drive.svg" alt="Google Drive Comp. Analysis">
-              <img src="images/ca-pinterest.svg" alt="Pinterest Comp. Analysis">
-              <img src="images/ca-dropbox.svg" alt="Dropbox Comp. Analysis">
+        <div class="persona-contain column-3">
+            <div class="persona-card logo-width">
+              <img src="images/google_drive_logo.png" alt="Google Drive Comp. Analysis">
+              <h3>Google Drive</h3>
+              <p></p>
+              <h4>The Likes</h4>
+              <ul>
+                <li>Great File Structure
+                </li>
+                <li>Offers Collaboration
+                </li>
+                <li>Cross Platform
+                </li>
+              </ul>
+              <h4>The Dislikes</h4>
+              <ul>
+                <li>Unavailable offline
+                </li>
+                <li>Weak file sharing security
+                </li>
+              </ul>
             </div>
+            <div class="persona-card logo-width">
+              <img src="images/pinterest_logo.png" alt="Pinterest Comp. Analysis">
+              <h3>Pinterest</h3>
+              <p></p>
+              <h4>The Likes</h4>
+              <ul>
+                <li>Nice dashboard grid view
+                </li>
+                <li>Can bookmark across web
+                </li>
+                <li>Social media integration
+                </li>
+              </ul>
+              <h4>The Dislikes</h4>
+              <ul>
+                <li>Difficult to navigate
+                </li>
+                <li>Can get lost browsing
+                </li>
+              </ul>
+            </div>
+            <div class="persona-card logo-width">
+              <img src="images/dropbox_logo.png" alt="Dropbox Comp. Analysis">
+              <h3>Dropbox</h3>
+              <p></p>
+              <h4>The Likes</h4>
+              <ul>
+
+                <li>Flexible storage options
+                </li>
+                <li>Simple UI
+                </li>
+                <li>File recovery
+                </li>
+              </ul>
+              <h4>The Dislikes</h4>
+              <ul>
+                <li>Smaller storage options
+                </li>
+                <li>A lot of color-accented links
+                </li>
+              </ul>
+            </div>
+
         </div>
       </section>
+
       <section class="regular-section">
         <h2><span class="pink-number">04 </span>User Stories</h2>
         <p>I created a backlog of user stories for all the functionality needed to address the users’ problems. There was difficulty distinguishing which functions were necessary or just a “nice-to-have.” After prioritizing the user stories from highest to lowest, the highest-ranking user stories were put into the first design sprint to make up the first Minimum Viable Product (MVP).</p>
-        <a href="https://docs.google.com/spreadsheets/d/1y3sLX8UfZhZMW8fqmODVqIk06kglVEMZ7WBxdKfmppw/edit?usp=sharing" class="full-pink-btn">View User Stories</a>
+        <a href="https://docs.google.com/spreadsheets/d/1y3sLX8UfZhZMW8fqmODVqIk06kglVEMZ7WBxdKfmppw/edit?usp=sharing" target="_blank" class="full-pink-btn">View All User Stories</a>
       </section>
 
       <section class="blue-background-section">
-        <div class="image-contain">
+        <!--<div class="image-contain">
           <div class="images-row">
               <img src="images/user_story_screenshot.png" alt="User Story Screenshot">
           </div>
             <p>User Story MVP snippet.
             </p>
-        </div>
+        </div>-->
+        <div class="table-contain">
+          <h4>New User Stories (MVP)</h4>
+          <p></p>
+
+            <table>
+              <tr>
+                <th>ROLE</th>
+                <th>TASK</th>
+                <th>IMPORTANCE</th>
+              </tr>
+              <tr>
+                <td>As a new user,</td>
+                <td>I want to create an account via email and password</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a new user,</td>
+                <td>I want to create an account via Google</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a new user,</td>
+                <td>I want to select my storage allotment when I create an account</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a returning user,</td>
+                <td>I want to sign into my account</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to create a new note</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to upload a new image file</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to create a new folder</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to view a dashboard that lists all my folders and files</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to move an item into a folder</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to sort my files by Name, Kind, Date Last Opened, Date Added, Date Modified, Date Created, or by Tags</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>As a signed-in user,</td>
+                <td>I want to save links/online content to my account (web pages and images)</td>
+                <td>High</td>
+              </tr>
+
+            </table>
+          </div>
       </section>
       <section class="regular-section">
         <h2><span class="pink-number">05 </span>User Flows</h2>
@@ -214,26 +405,39 @@
             <li>Move an item into a new folder.</li>
           </ul>
         <p></p>
-      <a href="https://drive.google.com/drive/folders/1Tunup7wX5lLBEDUBEBmc4B1z3NiaeKpZ?usp=sharing" class="full-pink-btn">View All User Flows</a>
+      <a href="https://drive.google.com/drive/folders/1Tunup7wX5lLBEDUBEBmc4B1z3NiaeKpZ?usp=sharing" target="_blank" class="full-pink-btn">View All User Flows</a>
       </section>
       <section class="blue-background-section">
-        <div class="image-contain">
+        <!--<div class="image-contain">
           <div class="images-row self-center">
             <img src="images/bentoboard_user_flows.png" alt="User Flow Example: Create an account">
           </div>
+
+            <p>User Flow Example: Create an account.
+            </p>
+        </div>-->
+
+        <div class="image-contain">
+            <div class="images-row">
+              <img src="images/userflow-sketch.png" alt="User Flow Sketches">
+              <img src="images/bentoboard_user_flows.png" alt="User Flow Example: Create an account">
+            </div>
             <p>User Flow Example: Create an account.
             </p>
         </div>
+
+
       </section>
       <section class="regular-section">
         <h2><span class="pink-number">06 </span>Wireframes</h2>
         <p>Next, I moved on to the skeletal structure of the product. I sketched several iterations of each screen on paper, then used those sketches to make low-fidelity mockups using Figma.
         </p>
+        <a href="https://drive.google.com/drive/folders/1RhsyzURY7ivZJwWmKWpFYBo1avsON171?usp=sharing" target="_blank" class="full-pink-btn">View All Wireframe Sketches</a>
       </section>
 
       <section class="blue-background-section">
         <div class="image-contain">
-            <div class="images-row wireframe-sketch">
+            <div class="images-row">
               <img src="images/wireframe_sketches.png" alt="Wireframe sketches">
               <img src="images/dashboard_wireframe.png" alt="Dashboard Wireframe">
             </div>
@@ -247,17 +451,38 @@
         <p>I used mind-mapping to figure out a name for the product. I jotted down 2 words that describe the cloud-service, storage and organization, then wrote several words that related to those attributes. Throughout the research process, I heard buzzwords such as minimal, approachable, intuitive, and dependable. After several iterations, I narrowed the name down to BentoBin.
         </p>
 
-        <a href="https://www.figma.com/file/ZcIx1WLpBJyBA5q2hqUosZ3c/BentoBin-Styleguide?node-id=0%3A1" class="full-pink-btn">View Style Guide</a>
+        <a href="https://www.figma.com/file/ZcIx1WLpBJyBA5q2hqUosZ3c/BentoBin-Styleguide?node-id=0%3A1" target="_blank" class="full-pink-btn">View Style Guide</a>
       </section>
       <section class="blue-background-section">
         <div class="image-contain">
-          <div class="images-row self-center">
+
+          <div class="images-row">
+            <img src="images/bento-mind-map.png" alt="Mind Map Sketches">
           <img src="images/bento-logo-sketches.png" alt="Logo Sketches">
+
         </div>
-          <p>BentoBin Logo Sketches.
+          <p>BentoBin Mind Mapping and Logo Sketches.
           </p>
         </div>
       </section>
+
+      <section class="blue-background-section">
+          <div class="single-img-wrapper">
+            <h4>BentoBin Color Palette</h4>
+            <img src="images/bento-colors.png" alt="BentoBin Colors">
+
+          </div>
+      </section>
+
+      <section class="blue-background-section">
+        <div class="single-img-wrapper">
+          <h4>BentoBin Typography</h4>
+          <img src="images/bento-type.png" alt="BentoBin Typography">
+
+        </div>
+      </section>
+
+
       <section class="regular-section">
         <h3>LOGO ITERATIONS</h3>
         <p>I was inspired by bento boxes, the modern japanese lunchbox. Bento boxes have separate compartments that hold different parts of your lunch. The name evokes a casual, fun and “kawaii” feeling towards the brand.
@@ -268,22 +493,24 @@
         <section class="blue-background-section">
           <div class="images-row">
             <div class="logo-card">
-              <p><span class="underline-bold">Logo 1</span>:<br>0% voted for this option.
+              <p><b>Logo 1:</b><br>0% voted for this option.
               </p>
               <img src="images/bento-logo-1.svg" alt="Logo iteration 1">
             </div>
             <div class="logo-card">
-              <p><span class="underline-bold">Logo 2:</span><br>20% voted for this option.
+              <p><b>Logo 2:</b><br>20% voted for this option.
               </p>
               <img src="images/bento-logo-2.svg" alt="Logo iteration 2">
             </div>
             <div class="logo-card">
-            <p><span class="underline-bold">Logo 3 (Winner)</span>:<br>80% voted for this option.
+            <p><b>Logo 3 (Winner):</b><br>80% voted for this option.
             </p>
             <img src="images/bento-logo-3.svg" alt="Logo iteration 3">
             </div>
           </div>
+
         </section>
+
 
         <section class="regular-section">
           <h2><span class="pink-number">08 </span>Mockups and User Testing</h2>
@@ -358,16 +585,16 @@
         <p class="footer-header">Let's create something amazing together.</p>
         <ul class="footer-links">
           <li class="footer-icon">
-            <a href="https://www.linkedin.com/in/josephnaldo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/josephnaldo/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
           </li>
           <li class="footer-icon">
-            <a href="https://github.com/joenaldo3"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/joenaldo3" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
           </li>
           <li class="footer-icon">
-            <a href="https://www.instagram.com/professionaldo/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/professionaldo/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </li>
           <li class="footer-icon">
-            <a href="mailto:Joseph.Naldo@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+            <a href="mailto:Joseph.Naldo@gmail.com" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
           </li>
         </ul>
         <p class="footer-text">Designed and developed by Joseph Naldo | &copy; Copyright 2019</p>
