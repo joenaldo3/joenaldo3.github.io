@@ -519,11 +519,23 @@ nav {
   grid-gap: 24px;
 }
 
-/*@media screen and (max-width: 375px) {
-  .button-flex a:first-of-type {
-   margin-bottom: 8px;
+@media screen and (max-width: 650px) {
+
+  .button-flex {
+    display: flex;
+    width: 85%;
+    max-width: 1110px;
+    margin: auto;
+    flex-direction: column;
+
+    align-content: center;
+    height: 116px;
   }
-}*/
+
+  .button-flex a {
+    align-self: center;
+  }
+}
 
 
 main {
