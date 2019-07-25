@@ -57,6 +57,7 @@ ul {
   font-size: 1.6rem;
   color: #444444;
   line-height: 3rem;
+  list-style-position: inside;
   }
 
   table {
