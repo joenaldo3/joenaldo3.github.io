@@ -1195,4 +1195,15 @@ h4 {
     margin: 0 auto;
     height: 70%;
   }
+  
+  .col-right {
+    padding: 16px;
+    height: auto;
+  }
+
+  textarea {
+    padding: 12px 20px;
+    margin: 12px 0 24px 0;
+    min-height: 100px;
+  }
 }
