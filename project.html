@@ -11,6 +11,8 @@
   gtag('config', 'UA-144178300-1');
 </script>
 
+<script src="scroll.js"></script>
+
     <title>Portfolio | Joe Naldo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
@@ -24,6 +26,7 @@
 
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up fa-1x"></i></button>
   <div class="top-container-project">
     <nav>
       <!-- Navbar SVG logo -->
@@ -47,6 +50,7 @@
       </div>
   </div>
     <main>
+
       <div class="justify-center-wrapper">
         <div class="project-headline fadeInUp animation-delay">
           <h1>BentoBin</h1>
@@ -124,7 +128,7 @@
             <li>What features do they find important?</li>
           </ul>
         <p></p>
-        <a href="https://www.figma.com/file/IOFCcdX9zKl1LMYTQanZy5IT/BentoBin-Final-Deliverable?node-id=110%3A1694" target="_blank" class="full-pink-btn">View Survey</a>
+        <a href="https://forms.gle/cekgnKgwQitgySkN9" target="_blank" class="full-pink-btn">View Survey</a>
       </section>
 
       <section class="blue-background-section">
@@ -429,10 +433,18 @@
 
       </section>
       <section class="regular-section">
-        <h2><span class="pink-number">06 </span>Wireframes</h2>
+        <h2><span class="pink-number">06 </span>Wireframes and Usability Testing</h2>
         <p>Next, I moved on to the skeletal structure of the product. I sketched several iterations of each screen on paper, then used those sketches to make low-fidelity mockups using Figma.
         </p>
-        <a href="https://drive.google.com/drive/folders/1RhsyzURY7ivZJwWmKWpFYBo1avsON171?usp=sharing" target="_blank" class="full-pink-btn">View All Wireframe Sketches</a>
+        <p>The lo-fi wireframes were then used to conduct in-person and remote usability tests. I asked 2 participants to complete the following tasks:</p>
+        <ul class="space-below">
+          <li>Sign up for an account</li>
+          <li>Add a piece of content</li>
+          <li>Organize a piece of content</li>
+        </ul>
+        <p></p>
+
+        <a href="https://drive.google.com/drive/folders/1RhsyzURY7ivZJwWmKWpFYBo1avsON171?usp=sharing" target="_blank" class="full-pink-btn">View Wireframe Sketches</a>
       </section>
 
       <section class="blue-background-section">
@@ -443,6 +455,34 @@
             </div>
             <p>Wireframe sketches to lo-fi mockup.
             </p>
+        </div>
+      </section>
+
+      <section class="blue-background-section">
+        <h3 class="heading-align">Usability Testing</h3>
+
+        <div class="wireframe-columns-grid">
+          <img src="images/dashboard-before.png" alt="Dashboard Before">
+          <div class="wireframe-col">
+            <h4>1st Round of Testing</h4>
+            <ul>
+              <li>1st participant took a long time figuring out how to move an item into a folder. Instead of showing the “move” option of an item on-click, he recommends showing the menu all the time within the item.</li>
+              <li>2nd participant noticed that the “note” and “link” preview on the dashboard looked similar. She suggests to distinguish the kind of types of files, perhaps by color or an icon of sorts.</li>
+            </ul>
+          </div>
+          <img src="images/dashboard-after.png" alt="Dashboard After">
+          <div class="wireframe-col">
+            <h4>2nd Round of Testing</h4>
+            <ul>
+              <li>1st participant said the left nav bar looked cluttered with the Account information as the first item. I moved the Account information to the top right-hand side of the dashbaord to open up space in the left nav.
+              </li>
+              <li>I added the the "Move" and "Delete" options on the dashboard items based off of user feedback.
+              </li>
+              <li>Icons have been added to the links in the left nav to improve visability.
+              </li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
@@ -493,18 +533,21 @@
         <section class="blue-background-section">
           <div class="images-row">
             <div class="logo-card">
-              <p><b>Logo 1:</b><br>0% voted for this option.
-              </p>
+
+              <h4>Logo 1:</h4>
+              <p>0% voted for this option.</p>
               <img src="images/bento-logo-1.svg" alt="Logo iteration 1">
             </div>
             <div class="logo-card">
-              <p><b>Logo 2:</b><br>20% voted for this option.
-              </p>
+
+              <h4>Logo 2:</h4>
+              <p>20% voted for this option.</p>
               <img src="images/bento-logo-2.svg" alt="Logo iteration 2">
             </div>
             <div class="logo-card">
-            <p><b>Logo 3 (Winner):</b><br>80% voted for this option.
-            </p>
+
+            <h4>Logo 3 (Winner):</h4>
+            <p>80% voted for this option.</p>
             <img src="images/bento-logo-3.svg" alt="Logo iteration 3">
             </div>
           </div>
@@ -513,14 +556,14 @@
 
 
         <section class="regular-section">
-          <h2><span class="pink-number">08 </span>Mockups and User Testing</h2>
+          <h2><span class="pink-number">08 </span>Mockups and Preference Testing</h2>
           <p>I applied all the branding (colors, typography, imagery) to the wireframes to create BentoBin’s initial high-fidelity mockups. I put my mockups up for testing at UsabilityHub.I created two variations of three different elements and conducted three preference tests on all three.
           </p>
           <p>Out of 6 participants, 2 preference tests had unanimous winners while 1 preference test was split 50/50. Participants left great feedback after testing and provided great insight such as “the 1st mockup was cleaner and required less cognitive load.”
           </p>
       </section>
-      <section class="blue-background-section">
-        <!--<div class="center-section">-->
+      <!--<section class="blue-background-section">
+
           <div class="pref-test">
             <div class="pref-column">
               <p><span class="underline-bold">Sign-in page, option 1:</span> 50% voted for this option</p>
@@ -546,33 +589,61 @@
               <img src="images/dashboard-2.png" alt="Dashboard Option 2">
             </div>
           </div>
-        <!--</div>-->
-      </section>
-      <!--<section class="blue-background-section">
-        <div class="center-section">
-          <div class="pref-test">
-            <div class="pref-column">
-              <p><span class="underline-bold">Dashboard, option 1:</span> 33% voted for this option</p>
-              <p>Folders show first 4 items within, and is organized within items section.
-              </p>
-              <img src="images/sign-in-page-1.png" alt="Dashboard Option 1">
-            </div>
-            <div class="pref-column">
-              <p><span class="underline-bold">Dashboard, option 2:</span> 67% voted for this option</p>
-              <p>Participants say “it was well designed, not too busy, and you can see the main folders and the individual files at the same time.”
-              </p>
-              <img src="images/sign-in-page-2.png" alt="Dashboard Option 2">
-            </div>
+
+      </section> -->
+
+      <section class="blue-background-section">
+        <h3 class="heading-align">Sign-In Page A/B Testing</h3>
+
+        <div class="wireframe-columns-grid no-shadow">
+          <img src="images/sign-in-page-1.png" alt="Sign-in Option 1">
+          <div class="wireframe-col">
+            <h4>Option 1</h4>
+            <p></p>
+            <p>Field lables are above the text field and no Google logo.
+            <br><b>50% voted for this option</b></p>
+          </div>
+          <img src="images/sign-in-page-2.png" alt="Dashboard Option 2">
+          <div class="wireframe-col">
+
+            <h4>Option 2 (WINNER)</h4>
+            <p></p>
+            <p>Field lables are inactive text within the text field.
+            <br><b>50% voted for this option</b></p>
           </div>
         </div>
-      </section> -->
+      </section>
+
+      <section class="blue-background-section">
+        <h3 class="heading-align">Dashboard Page A/B Testing</h3>
+
+        <div class="wireframe-columns-grid no-shadow">
+          <img src="images/dashboard-1.png" alt="Sign-in Option 1">
+          <div class="wireframe-col">
+            <h4>Option 1</h4>
+            <p></p>
+            <p>Folders show first 4 items within, and is organized within items section.
+            <br><b>33% voted for this option</b></p>
+          </div>
+          <img src="images/dashboard-2.png" alt="Dashboard Option 2">
+          <div class="wireframe-col">
+
+            <h4>Option 2 (WINNER)</h4>
+            <p></p>
+            <p>Participants say “it's' well designed, not too busy, and can see both folders and individual files at the same time.”
+            <br><b>67% voted for this option</b></p>
+          </div>
+        </div>
+      </section>
+
+
       <section class="design-process-container">
           <p class="design-process-header">Conclusion
           </p>
       </section>
       <section class="regular-section">
         <h2>What did I learn?</h2>
-        <p>The project started with vague business requirements that had me frustrated in what direction to take. The cloud-storage marketplace is somewhat over saturated with apps that have great designs with a lot of functionality. But despite the over saturation, cloud-storage users still need better solutions to solve cloud-storage problems such as making organization better, or allowing the user to add content faster. I would have never found these problems if it weren't for user research and multiple user testing. Based off of these problems, I focused on improving content organization and minimizing dashboard clutter.
+        <p>The cloud-storage marketplace is somewhat over saturated with apps that have great designs with a lot of functionality. But despite the over saturation, cloud-storage users still need better solutions to solve cloud-storage problems such as making organization better, or allowing the user to add content faster. <b>I would have never found these problems if it weren't for user research and multiple user testing.</b> Based off of these problems, I focused on improving content organization and minimizing dashboard clutter.
         </p>
         <p>If given more time, I would continue designing important functions such as search and sharing capabilities. I would expand the use of this app from “casual users” to “professional users” who use cloud-storage for corporate needs. This would require more user research and testing by corporate users, as well as upper management.
         </p>
