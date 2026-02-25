@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joe Naldo | UX Designer</title>
+  <meta name="description" content="UX Designer focused on clarity, accessibility, and structured design systems." />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css?v=11" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          Joe Naldo <span class="muted">UX Designer</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="assets/pdf/JN-Resume-2026.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <h1>I design digital products that bring clarity to complex work.</h1>
+
+          <p class="lead">
+            Currently at Leidos, supporting federal programs through UX design, focused on usability and structured design systems.
+          </p>
+
+          <p class="meta">
+            Based in Orlando, FL 📍. Open to new UX and product design roles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Selected Work</h2>
+
+        <div class="work-stack">
+          <a class="work-card" href="./work/arpa-h/index.html">
+            <div class="work-media">
+              <img src="assets/img/work-arpa-h.png" alt="ARPA-H Solution Site preview" />
+            </div>
+            <div>
+              <h3 class="work-title">ARPA-H Solution Site</h3>
+              <p class="work-subtitle">
+                Designed a submission platform for health research funding and event registration.
+              </p>
+            </div>
+          </a>
+
+          <a class="work-card" href="./work/nhlbi/index.html">
+            <div class="work-media">
+              <img src="assets/img/work-nhlbi.png" alt="NHLBI Homepage redesign preview" />
+            </div>
+            <div>
+              <h3 class="work-title">NHLBI Homepage Redesign</h3>
+              <p class="work-subtitle">
+                Redesigned the homepage to help users find critical information faster while building a design system foundation.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Bring (Moved Up) -->
+    <section class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">What I Bring</h2>
+
+        <div class="grid-3">
+          <div class="mini-card">
+            <h3 class="mini-title">6+ Years Designing for Federal Products</h3>
+            <p class="mini-text">
+              Experience across multiple HHS agencies, including NIAID, NHLBI, FDA, and ARPA-H.
+            </p>
+          </div>
+
+          <div class="mini-card">
+            <h3 class="mini-title">Building Design Systems</h3>
+            <p class="mini-text">
+              Contributed to three design systems that improved clarity and collaboration across UX, Dev, and Product teams.
+            </p>
+          </div>
+
+          <div class="mini-card">
+            <h3 class="mini-title">Drupal & Enterprise CMS Work</h3>
+            <p class="mini-text">
+              Led UX work inside Drupal, Microsoft Power Pages, and other CMS environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More About Joe -->
+    <section class="section about-home">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-photo">
+            <img src="assets/img/joe-naldo.jpg" alt="Portrait of Joe Naldo smiling outdoors" />
+          </div>
+
+          <div class="about-text">
+            <h2 class="section-title">More About Joe</h2>
+
+            <p class="about-lead">
+              Bridging Product and UX
+            </p>
+
+            <p class="about-body">
+              I came into UX through business analysis and product work, where I wrote requirements and documentation. That experience taught me how systems are built and why decisions get made. Over time, I noticed the gap between stakeholder goals and real user behavior. I wanted to shape the experience itself, not just describe it. That’s what led me into UX.
+            </p>
+
+            <p class="about-body">
+              Outside of work, I’m usually with my family or planning our next cruise. I’ve been on over 35 sailings and still get excited every time. Feel free to ask where I've been!
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+
+    <!-- Left Column -->
+    <div class="footer-cta">
+      <h2 class="footer-title">Interested in working together?</h2>
+      <p class="footer-subtitle">
+        I’m currently open to new UX and product design roles.
+      </p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-contact">
+      <p class="footer-label">Email</p>
+
+      <div class="footer-email-row">
+        <span class="footer-email" id="emailText">
+          joseph.naldo@gmail.com
+        </span>
+
+        <button
+          class="footer-copy-btn"
+          type="button"
+          data-email="joseph.naldo@gmail.com">
+          Copy
+        </button>
+
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p class="footer-small">
+      © <span id="year"></span> Joe Naldo
+      <span class="footer-separator">·</span>
+      Orlando, FL
+    </p>
+  </div>
+
+  <script>
+  (function () {
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+
+    const btn = document.querySelector(".footer-copy-btn");
+    if (!btn) return;
+
+    const email = btn.getAttribute("data-email");
+    const originalText = btn.textContent;
+
+    async function copyToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "absolute";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+      return ok;
+    }
+
+    let timeoutId = null;
+
+    btn.addEventListener("click", async () => {
+      if (timeoutId) clearTimeout(timeoutId);
+
+      try {
+        const ok = await copyToClipboard(email);
+        if (!ok) throw new Error("copy failed");
+
+        btn.textContent = "Copied ✓";
+        btn.classList.add("is-copied");
+
+        timeoutId = setTimeout(() => {
+          btn.textContent = originalText;
+          btn.classList.remove("is-copied");
+        }, 1400);
+
+      } catch (e) {
+        btn.textContent = "Error";
+        timeoutId = setTimeout(() => {
+          btn.textContent = originalText;
+        }, 1400);
+      }
+    });
+  })();
+</script>
+</footer>
+
+</body>
+</html>
