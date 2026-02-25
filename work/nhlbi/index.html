@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NHLBI Homepage Redesign | Joe Naldo</title>
+  <meta name="description"
+    content="Case study: NHLBI Homepage Redesign — improving findability and clarity on a high-traffic federal homepage." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/styles.css?v=11" />
+</head>
+
+<body class="case-page">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../../index.html">
+          Joe Naldo <span class="muted">UX Designer</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="../../index.html">Work</a></li>
+          <li><a href="../../assets/pdf/JN-Resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="case-hero">
+      <div class="container">
+
+        <div class="case-text">
+          <p class="case-kicker">Selected Work</p>
+          <h1>NHLBI Homepage Redesign</h1>
+
+          <p class="lead">
+            Redesigning the NHLBI homepage to help people find the right information faster, while setting a stronger foundation for reusable UI patterns.
+          </p>
+
+          <div class="case-meta">
+            <div>
+              <p class="case-meta-label">Role</p>
+              <p class="case-meta-value">UX Designer</p>
+            </div>
+
+            <div>
+              <p class="case-meta-label">Team</p>
+              <p class="case-meta-value">UX Research, Product, Engineering, Content</p>
+            </div>
+
+            <div>
+              <p class="case-meta-label">Timeline</p>
+              <p class="case-meta-value">Multi-sprint effort</p>
+            </div>
+
+            <div>
+              <p class="case-meta-label">Focus</p>
+              <p class="case-meta-value">Homepage IA, reusable components, accessibility</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-hero-media">
+          <img src="../../assets/img/work-nhlbi.png" alt="NHLBI Homepage redesign preview" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Overview</h2>
+
+          <p class="case-paragraph">
+            I led the redesign of the National Heart, Lung, and Blood Institute’s public homepage, which had expanded over time without a clear system behind it.
+            As priorities shifted, new sections were layered in, but the structure didn’t evolve with them. We were sorting through content priorities, business goals, and CMS constraints all at once.
+          </p>
+
+          <ul class="case-bullets">
+            <li>What should visitors see first?</li>
+            <li>How do we guide people toward the right health topics?</li>
+            <li>How do we add new sections within Drupal without breaking the layout?</li>
+          </ul>
+        </div>
+
+        <figure class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/nhlbi-research-users.png"
+              alt="Research slide summarizing what users do on the NHLBI homepage and common navigation behaviors." />
+          </div>
+          <figcaption class="case-caption">
+            Research helped us focus on how visitors actually move through the homepage (not how we wished they would).
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section-title">The Challenge</h2>
+
+        <div class="case-text">
+          <div class="case-callout">
+            <p><strong>What we were solving:</strong> the homepage wasn’t guiding people well. Important content was hard to spot, navigation was unclear, and the layout didn’t support quick scanning.</p>
+          </div>
+        </div>
+
+        <figure class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/nhlbi-old-homepage.png"
+              alt="Legacy NHLBI homepage experience before redesign." />
+          </div>
+          <figcaption class="case-caption">
+            The legacy homepage had a lot of content, but the structure didn’t make it easy to understand where to go next.
+          </figcaption>
+        </figure>
+
+        <div class="case-text">
+          <h3 class="case-subtitle">What we were seeing</h3>
+          <ul class="case-bullets">
+            <li>Too many competing entry points with no clear hierarchy</li>
+            <li>Key tasks weren’t obvious (and people had to hunt)</li>
+            <li>Content was dense and hard to scan on first pass</li>
+            <li>Patterns weren’t consistent across modules</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Strategy -->
+    <section class="section section-muted">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Strategy</h2>
+
+          <p class="case-paragraph">
+            We reframed the homepage around what people come here to do. That meant tightening the hierarchy, making the “next step” obvious,
+            and using a smaller set of repeatable patterns instead of one-off layouts.
+          </p>
+
+          <ul class="case-bullets">
+            <li><strong>Lead with intent:</strong> clearer primary actions and entry points</li>
+            <li><strong>Make it scannable:</strong> stronger headings, spacing, and content grouping</li>
+            <li><strong>Design for reuse:</strong> components that could work across other pages, not just the homepage</li>
+          </ul>
+        </div>
+
+        <figure class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/nhlbi-research-survey.png"
+              alt="Survey summary chart showing what users think should be at the top of the NHLBI homepage." />
+          </div>
+          <figcaption class="case-caption">
+            Survey results gave us a clear signal on what visitors expect to see first.
+          </figcaption>
+        </figure>
+
+        <figure class="case-media-full">
+          <div class="case-media-grid case-media-grid--two">
+            <div class="case-media">
+              <img src="../../assets/img/nhlbi-research-suggested-1.png"
+                alt="Diagram showing the original consumer-facing homepage section order." />
+            </div>
+            <div class="case-media">
+              <img src="../../assets/img/nhlbi-research-suggested-2.png"
+                alt="Diagram showing the suggested homepage section order based on research and priorities." />
+            </div>
+          </div>
+          <figcaption class="case-caption">
+            We mapped the original content order, then proposed a new order based on research so stakeholders could align early (and stop debating every section in isolation).
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Key Design Decisions -->
+    <section class="section">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Key Design Decisions</h2>
+
+          <h3 class="case-subtitle">Homepage layout and hierarchy</h3>
+          <p class="case-paragraph">
+            We simplified the page into a clear rhythm: a strong top story area, a consistent wayfinding pattern, and repeatable content modules.
+            The goal was to make the page feel calmer and easier to scan without hiding important work.
+          </p>
+        </div>
+
+        <figure class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/nhlbi-homepage-new.png"
+              alt="Redesigned NHLBI homepage showing improved hierarchy, modular sections, and clearer wayfinding." />
+          </div>
+          <figcaption class="case-caption">
+            Redesign concept: clearer hierarchy, fewer competing modules, and more consistent patterns.
+          </figcaption>
+        </figure>
+
+        <div class="case-text">
+          <h3 class="case-subtitle">Reusable content modules</h3>
+          <ul class="case-bullets">
+            <li>Standardized cards and content blocks for repeatable layout</li>
+            <li>Clear heading + supporting text patterns for scanning</li>
+            <li>Consistent CTAs so users aren’t guessing what happens next</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Research & Validation -->
+    <section class="section section-muted">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Research & Validation</h2>
+
+          <p class="case-paragraph">
+            I partnered closely with UX research as we iterated. Their findings helped us pressure-test page hierarchy, content grouping,
+            and whether users understood where to go next.
+          </p>
+
+          <p class="case-paragraph">
+            We used a mix of quick tests and behavioral tools so decisions stayed grounded in what people did, not just what stakeholders preferred.
+          </p>
+        </div>
+
+        <figure class="case-media-full">
+          <div class="case-media-grid case-media-grid--two">
+            <div class="case-media">
+              <img src="../../assets/img/research-4.png"
+                alt="First click test results highlighting where users clicked first on the homepage." />
+            </div>
+
+            <div class="case-media">
+              <img src="../../assets/img/research-1.png"
+                alt="Helio open-ended question test showing qualitative feedback prompt." />
+            </div>
+          </div>
+
+          <figcaption class="case-caption">
+            First-click testing showed where people instinctively went. Open-ended prompts helped us understand the “why” behind the confusion.
+          </figcaption>
+        </figure>
+
+        <figure class="case-media-full">
+          <div class="case-media-grid case-media-grid--two">
+            <div class="case-media">
+              <img src="../../assets/img/research-2.png"
+                alt="Helio multiple choice prioritization test showing item selection." />
+            </div>
+
+            <div class="case-media">
+              <img src="../../assets/img/research-3.png"
+                alt="Crazy Egg heatmap showing scroll depth and click behavior." />
+            </div>
+          </div>
+
+          <figcaption class="case-caption">
+            Prioritization testing clarified what users expected to see first, and heatmaps showed what actually pulled attention (and how far most visitors scrolled).
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Building the Figma Component System -->
+    <section class="section">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Building the Figma Component System</h2>
+
+          <p class="case-paragraph">
+            The homepage redesign became the starting point for a broader component effort. As we built modules for the page,
+            we translated them into reusable Figma components so the team could scale patterns across the site.
+          </p>
+
+          <div class="grid-3">
+            <div class="mini-card">
+              <h3 class="mini-title">Atomic</h3>
+              <p class="mini-text">Typography, spacing, color usage, button styles, input states</p>
+            </div>
+
+            <div class="mini-card">
+              <h3 class="mini-title">Molecular</h3>
+              <p class="mini-text">Card patterns, section headers, utility modules, content blocks</p>
+            </div>
+
+            <div class="mini-card">
+              <h3 class="mini-title">Organism</h3>
+              <p class="mini-text">Hero, featured content rows, campaign sections, multi-card groups</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="case-media-full">
+          
+            <div class="case-media">
+              <img src="../../assets/img/component-contributing-guide.png"
+                alt="Design system contribution guide flowchart for proposing new components or variants." />
+            </div>
+          
+          <figcaption class="case-caption">
+            We paired the component library with lightweight guidance so designers and partners knew how to contribute without creating one-off patterns.
+          </figcaption>
+        </figure>
+
+
+        <figure class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/design-system-2.png"
+              alt="Figma component library snapshot showing NHLBI homepage modules and reusable components." />
+          </div>
+          <figcaption class="case-caption">
+            Snapshot of the component library as it expanded from homepage modules into a reusable system.
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section section-muted">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Conclusion</h2>
+
+          <p class="case-paragraph">
+            This work reinforced something I care a lot about: homepage design isn’t decoration. It’s wayfinding.
+            The most meaningful improvements came from simplifying choices, clarifying hierarchy, and building patterns the team could actually reuse.
+          </p>
+
+          <div class="case-next">
+            <a class="btn btn-secondary" href="../arpa-h/index.html">Previous case study: ARPA-H Solution Site</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (same pattern as homepage) -->
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+
+    <!-- Left Column -->
+    <div class="footer-cta">
+      <h2 class="footer-title">Interested in working together?</h2>
+      <p class="footer-subtitle">
+        I’m currently open to new UX and product design roles.
+      </p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-contact">
+      <p class="footer-label">Email</p>
+
+      <div class="footer-email-row">
+        <span class="footer-email" id="emailText">
+          joseph.naldo@gmail.com
+        </span>
+
+        <button
+          class="footer-copy-btn"
+          type="button"
+          data-email="joseph.naldo@gmail.com"
+          aria-describedby="copyStatus">
+          Copy
+        </button>
+
+        <span
+          class="footer-copy-status"
+          id="copyStatus"
+          role="status"
+          aria-live="polite">
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p class="footer-small">
+      © <span id="year"></span> Joe Naldo
+      <span class="footer-separator">·</span>
+      Orlando, FL
+    </p>
+  </div>
+
+  <script>
+    (function () {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+
+      const btn = document.querySelector(".footer-copy-btn");
+      const status = document.getElementById("copyStatus");
+      if (!btn) return;
+
+      const email = btn.getAttribute("data-email");
+
+      async function copyToClipboard(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return true;
+        }
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "absolute";
+        ta.style.left = "-9999px";
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand("copy");
+        document.body.removeChild(ta);
+        return ok;
+      }
+
+      let timeoutId = null;
+
+      btn.addEventListener("click", async () => {
+        if (timeoutId) window.clearTimeout(timeoutId);
+
+        try {
+          const ok = await copyToClipboard(email);
+          if (!ok) throw new Error("copy failed");
+
+          btn.classList.add("is-copied");
+          if (status) status.textContent = "Copied";
+
+          timeoutId = window.setTimeout(() => {
+            btn.classList.remove("is-copied");
+            if (status) status.textContent = "";
+          }, 1400);
+        } catch (e) {
+          if (status) status.textContent = "Copy failed";
+          timeoutId = window.setTimeout(() => {
+            if (status) status.textContent = "";
+          }, 1800);
+        }
+      });
+    })();
+  </script>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARPA-H Solution Site | Joe Naldo</title>
+  <meta name="description"
+    content="Case study: ARPA-H Solution Site — improving clarity and scalability in a federal submission platform." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/styles.css?v=11" />
+</head>
+
+<body class="case-page">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="../../index.html">
+          Joe Naldo <span class="muted">UX Designer</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Work</a></li>
+          <li><a href="../../assets/pdf/JN-Resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="case-hero">
+      <div class="container">
+
+        <div class="case-text">
+          <p class="case-kicker">Selected Work</p>
+          <h1>ARPA-H Solution Site</h1>
+
+          <p class="lead">
+            Designing a scalable platform where proposers submit health research proposals and register for ARPA-H events.
+          </p>
+
+          <div class="case-meta">
+            <div>
+              <p class="case-meta-label">Role</p>
+              <p class="case-meta-value">UX Designer</p>
+            </div>
+
+            <div>
+              <p class="case-meta-label">Team</p>
+              <p class="case-meta-value">Product Owner, Business Analyst, QA, 2 Front-End Engineers</p>
+            </div>
+
+            <div>
+              <p class="case-meta-label">Timeline</p>
+              <p class="case-meta-value">8 Months</p>
+            </div>
+
+            <div>
+              <p class="case-meta-label">Focus</p>
+              <p class="case-meta-value">Angular Rebuild, Fluent UI-inspired component patterns</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-hero-media">
+          <img src="../../assets/img/work-arpa-h.png" alt="ARPA-H Solution Site interface preview" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Challenge -->
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section-title">The Challenge</h2>
+
+        <div class="case-two-col">
+          <div>
+            <p class="case-paragraph">
+              The existing ARPA-H solution submission process was creating issues for both applicants and internal teams.
+              Analytics pointed to friction in key flows, and support tickets were mounting.
+            </p>
+
+            <p class="case-paragraph">
+              Dev leadership chose to rebuild the platform in Angular, and the UX team aligned on using Fluent UI components
+              to create a more scalable and consistent experience.
+            </p>
+          </div>
+
+          <aside class="case-metrics">
+            <h3 class="case-metrics-title">Problem in numbers</h3>
+            <ul class="case-metrics-list">
+              <li><strong>22.92%</strong> dead clicks</li>
+              <li><strong>22.85%</strong> quick backs</li>
+              <li><strong>16.6%</strong> JavaScript error rate</li>
+              <li><strong>50%+</strong> internal support tickets</li>
+            </ul>
+            <p class="case-metrics-note">
+              Data sourced from Microsoft Clarity analytics.
+            </p>
+          </aside>
+        </div>
+
+        <div class="case-text" style="margin-top: 48px;">
+          <h3 class="case-subtitle">The legacy experience</h3>
+          <p class="case-paragraph">
+            The site was built on Microsoft Power Pages. It got us live quickly, but it limited customization and conditional logic.
+            As submission requirements became more complex, the platform started showing its constraints.
+          </p>
+        </div>
+
+        <div class="case-media-full">
+          <div class="case-media-grid case-media-grid--two">
+            <div class="case-media">
+              <img src="../../assets/img/ss-old-homepage.png"
+                alt="Legacy ARPA-H Solutions homepage showing event cards and navigation structure." />
+            </div>
+
+            <div class="case-media">
+              <img src="../../assets/img/ss-old-proposal.png"
+                alt="Legacy full proposal submission form with side navigation and structured sections." />
+            </div>
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            The legacy experience used long, linear forms with limited conditional logic, inconsistent terminology, and layout constraints.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Information Architecture -->
+    <section class="section section-muted">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Defining the Information Architecture</h2>
+
+          <p class="case-paragraph">
+            Before designing, I mapped the full sitemap. The product team and I had to get clear on what required sign-in and what didn’t.
+            Events needed to be visible publicly, while submission workflows had to be gated behind authentication.
+          </p>
+        </div>
+
+        <div class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/sitemap.png" alt="Solution Site sitemap showing gated and public areas." />
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            Mapping this early helped us align on entry points, access rules, and how submission types relate to each other.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Structuring the Submission -->
+    <section class="section">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Structuring the Submission Experience</h2>
+          <p class="case-paragraph">
+            Instead of one long form, I reorganized the submission into three clear steps to reduce cognitive load and create natural
+            validation checkpoints.
+          </p>
+        </div>
+
+        <div class="case-three">
+          <div class="mini-card">
+            <h3 class="mini-title">1. General Proposal Information</h3>
+            <p class="mini-text">Title, Solicitation, Mechanism, Phase, Topic, Proposal Uploads</p>
+          </div>
+
+          <div class="mini-card">
+            <h3 class="mini-title">2. Budget Details</h3>
+            <p class="mini-text">Funding information, Budget Uploads</p>
+          </div>
+
+          <div class="mini-card">
+            <h3 class="mini-title">3. Key Organizations &amp; Personnel</h3>
+            <p class="mini-text">Primary organization, Sub-organizations, Point of Contact</p>
+          </div>
+        </div>
+
+        <!-- MOVED HERE -->
+        <div class="case-media-full" style="margin-top: 48px;">
+          <div class="case-media">
+            <img src="../../assets/img/ss-landing.png"
+              alt="Solution Summary landing page across desktop, tablet, and mobile layouts." />
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            The landing page set expectations up front and made the steps feel predictable across desktop, tablet, and mobile.
+          </p>
+        </div>
+
+        <div class="case-text">
+          <h3 class="case-subtitle">Key UX decisions</h3>
+          <ul class="case-bullets">
+            <li><strong>Logical grouping:</strong> aligned sections to user mental models.</li>
+            <li><strong>Conditional logic:</strong> surfaced only relevant fields.</li>
+            <li><strong>Inline validation:</strong> plain-language error feedback.</li>
+            <li><strong>Reusable upload pattern:</strong> consistent file handling and messaging.</li>
+          </ul>
+        </div>
+
+        <div class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/ss-error.png"
+              alt="Solution Summary form showing inline validation and error messaging." />
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            Inline validation patterns reduced ambiguity by clearly highlighting missing or incorrect information before submission.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Design System -->
+    <section class="section section-muted">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Contributing to the Design System</h2>
+          <p class="case-paragraph">
+            I documented reusable patterns and contributed them back to our shared Figma library, so future features could be built more
+            consistently and with less rework.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="mini-card">
+            <h3 class="mini-title">Atomic</h3>
+            <p class="mini-text">Tokens, spacing, input states, button hierarchy</p>
+          </div>
+          <div class="mini-card">
+            <h3 class="mini-title">Molecular</h3>
+            <p class="mini-text">File uploads, conditional sections, validation summaries</p>
+          </div>
+          <div class="mini-card">
+            <h3 class="mini-title">Organism</h3>
+            <p class="mini-text">Solution Summary and Proposal workflows</p>
+          </div>
+        </div>
+
+        <div class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/variables.png"
+              alt="Figma design system variable structure showing tokens and theme mappings." />
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            Example of variable structure and token mapping used to support scalable theming and component reuse.
+          </p>
+        </div>
+
+        <div class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/ss-buttons.png"
+              alt="Button, breadcrumb, and badge component states showing hover, pressed, disabled, and dark theme variants." />
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            Component states documented across light and dark themes, including hover, focus, pressed, and disabled variants.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Expanded homepage section (closer to end) -->
+    <section class="section">
+      <div class="container">
+
+        <div class="case-text">
+          <h2 class="section-title">Refining the Homepage MVP</h2>
+
+          <p class="case-paragraph">
+            We started with a simple homepage MVP: clear entry points for submissions, plus a path for event registration.
+            In theory it was straightforward. In practice, the homepage kept getting pulled in different directions as requirements shifted.
+          </p>
+
+          <p class="case-paragraph">
+            A few things drove that: development constraints, changes in what needed to be emphasized, and decisions landing later than we expected.
+            Each time one of those changed, we had to revisit layout, hierarchy, and calls to action. It created a lot of rework, and that rework
+            pushed the release further out.
+          </p>
+
+          <p class="case-paragraph">
+            The upside is that the iterations forced sharper decisions: what’s primary, what’s secondary, and what should be visible before sign-in.
+            By the end, the homepage was cleaner and more intentional, even though it took longer to get there.
+          </p>
+        </div>
+
+        <div class="case-media-full">
+          <div class="case-media">
+            <img src="../../assets/img/ss-homepage-variations.png"
+              alt="Homepage design iterations showing layout evolution and improved hierarchy." />
+          </div>
+        </div>
+
+        <div class="case-text">
+          <p class="case-caption">
+            Homepage iterations showing how the MVP evolved as requirements and build constraints changed.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="case-text">
+          <h2 class="section-title">Impact</h2>
+          <p class="case-paragraph">
+            The redesign had not launched prior to my departure, so long-term user metrics weren’t captured. Even so, the work established a
+            scalable structural foundation for future submission types without requiring redesign of core workflows.
+          </p>
+
+          <ul class="case-bullets">
+            <li>Standardized submission structure</li>
+            <li>Clearer terminology and validation patterns</li>
+            <li>Reusable design components aligned to Angular rebuild</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="section">
+      <div class="container">
+        <div class="case-text">
+          <h2 class="section-title">Reflection</h2>
+          <p class="case-paragraph">
+            The biggest lesson for me was how quickly rework compounds when requirements are still moving.
+            When decisions land late, even “small” homepage changes ripple into navigation, content, and component behavior.
+          </p>
+
+          <p class="case-paragraph">
+            If I could do it again, I’d push harder for earlier alignment on homepage priorities and define “done” more tightly for the MVP.
+            It would’ve protected the team from churn and made handoffs smoother.
+          </p>
+
+          <div class="case-next">
+            <a class="btn btn-secondary" href="../nhlbi/index.html">Next case study: NHLBI Homepage Redesign</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+
+    <!-- Left Column -->
+    <div class="footer-cta">
+      <h2 class="footer-title">Interested in working together?</h2>
+      <p class="footer-subtitle">
+        I’m currently open to new UX and product design roles.
+      </p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-contact">
+      <p class="footer-label">Email</p>
+
+      <div class="footer-email-row">
+        <span class="footer-email" id="emailText">
+          joseph.naldo@gmail.com
+        </span>
+
+        <button
+          class="footer-copy-btn"
+          type="button"
+          data-email="joseph.naldo@gmail.com"
+          aria-describedby="copyStatus">
+          Copy
+        </button>
+
+        <span
+          class="footer-copy-status"
+          id="copyStatus"
+          role="status"
+          aria-live="polite">
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p class="footer-small">
+      © <span id="year"></span> Joe Naldo
+      <span class="footer-separator">·</span>
+      Orlando, FL
+    </p>
+  </div>
+
+  <script>
+    (function () {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+
+      const btn = document.querySelector(".footer-copy-btn");
+      const status = document.getElementById("copyStatus");
+      if (!btn) return;
+
+      const email = btn.getAttribute("data-email");
+
+      async function copyToClipboard(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return true;
+        }
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "absolute";
+        ta.style.left = "-9999px";
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand("copy");
+        document.body.removeChild(ta);
+        return ok;
+      }
+
+      let timeoutId = null;
+
+      btn.addEventListener("click", async () => {
+        if (timeoutId) window.clearTimeout(timeoutId);
+
+        try {
+          const ok = await copyToClipboard(email);
+          if (!ok) throw new Error("copy failed");
+
+          btn.classList.add("is-copied");
+          if (status) status.textContent = "Copied";
+
+          timeoutId = window.setTimeout(() => {
+            btn.classList.remove("is-copied");
+            if (status) status.textContent = "";
+          }, 1400);
+        } catch (e) {
+          if (status) status.textContent = "Copy failed";
+          timeoutId = window.setTimeout(() => {
+            if (status) status.textContent = "";
+          }, 1800);
+        }
+      });
+    })();
+  </script>
+</footer>
+
+</body>
+
+</html>
